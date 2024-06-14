@@ -13,7 +13,6 @@ ul {
     height: 100%;
 } 
 li {
-    float: left;
     background-color: silver;
 }  
 li a {
