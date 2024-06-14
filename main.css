@@ -22,7 +22,7 @@ li a {
     font-size: 32px;
     color: black;
 } 
-li a:active {
+li a.active {
     background-color: silver;
 }
 
