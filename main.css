@@ -22,9 +22,8 @@ li a {
     font-size: 32px;
     color: black;
 } 
-li a:hover {
-    background-color: #111;
-    color: white;
+li a:active {
+    background-color: silver;
 }
 
 #contentSelection{
