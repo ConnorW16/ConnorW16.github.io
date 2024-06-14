@@ -3,7 +3,7 @@ function openProject(evt, projectName){
 
     tabcontent = document.getElementsByClassName("tabcontent");
     for(i = 0; i < tabcontent.length; i++){
-        tabcontent[i].computedStyleMap.display="none";
+        tabcontent[i].style.display = "none";
     }
 
     tablinks = document.getElementsByClassName("tablinks");
