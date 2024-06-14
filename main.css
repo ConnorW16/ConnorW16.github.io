@@ -2,14 +2,17 @@
     background-color: antiquewhite;
     border: 2px solid black;
     margin-bottom: 25px;
+    padding: 5px;
 }
 #contentSelection{
     background-color: aquamarine;
     border: 2px solid black;
     margin-bottom: 25px;
+    padding: 5px;
 }
 #footer{
     background-color: blueviolet;
     border: 2px solid black;
     margin-bottom: 25px;
+    padding: 5px;
 }
