@@ -7,9 +7,7 @@
     font-size: 48px;
 }
 ul {
-    list-style-type: none;
     margin-right: 5px;
-    overflow: hidden;
     float: right;
 } 
 li {
