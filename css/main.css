@@ -34,6 +34,12 @@ li a:hover {
     background-color: #111;
     color: white;
 }
+#summary{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    margin-bottom: 25px;
+    padding: 5px;
+}
 
 #contentSelection{
     background-color: aquamarine;
