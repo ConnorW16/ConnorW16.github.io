@@ -8,11 +8,11 @@
 }
 ul {
     list-style-type: none;
-    margin-right: 5px;
     float: right;
     height: 100%;
 } 
 li {
+    float: left;
     background-color: silver;
 }  
 li a {
