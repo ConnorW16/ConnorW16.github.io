@@ -1,15 +1,15 @@
 #header{
     background-color: antiquewhite;
-    border: 10px solid black;
+    border: 2px solid black;
     margin-bottom: 25px;
 }
 #contentSelection{
     background-color: aquamarine;
-    border: 10px solid black;
+    border: 2px solid black;
     margin-bottom: 25px;
 }
 #footer{
     background-color: blueviolet;
-    border: 10px solid black;
+    border: 2px solid black;
     margin-bottom: 25px;
 }
