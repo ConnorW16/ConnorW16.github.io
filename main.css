@@ -24,6 +24,7 @@ li a {
 } 
 li a.active {
     background-color: silver;
+    border: 2px dotted black;
 }
 
 #contentSelection{
