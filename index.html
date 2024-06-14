@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <script src="accordion.js"></script>
+    <script src="js/tabs.js"></script>
     <title>Connor Walton</title>
 </head>
 <body>
@@ -20,17 +20,32 @@
         </div>
     </div>
     <div id="contentSelection">
-        <button class="accordion">Section 1</button>
-        <div class="panel">
-            <p>Lorem ipsum...</p>
+        <div class="tabs">
+            <button class="tablinks" onclick="openProject(event, 'Project1')">Project 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2')">Project 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project3')">Project 3</button>
+            <button class="tablinks" onclick="openProject(event, 'Project4')">Project 4</button>
+            <button class="tablinks" onclick="openProject(event, 'Project5')">Project 5</button>
         </div>
-        <button class="accordion">Section 2</button>
-        <div class="panel">
-            <p>Lorem ipsum...</p>
+        <div id="Project1" class="tabcontent">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae itaque voluptatem? Ea, nihil perferendis. Tempore accusantium reiciendis, nostrum unde necessitatibus consectetur exercitationem voluptate doloremque aspernatur quaerat? Est, vero iusto.</p>
         </div>
-        <button class="accordion">Section 3</button>
-        <div class="panel">
-            <p>Lorem ipsum...</p>
+        <div id="Project2" class="tabcontent">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae itaque voluptatem? Ea, nihil perferendis. Tempore accusantium reiciendis, nostrum unde necessitatibus consectetur exercitationem voluptate doloremque aspernatur quaerat? Est, vero iusto.</p>
+        </div>
+        <div id="Project3" class="tabcontent">
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae itaque voluptatem? Ea, nihil perferendis. Tempore accusantium reiciendis, nostrum unde necessitatibus consectetur exercitationem voluptate doloremque aspernatur quaerat? Est, vero iusto.</p>
+        </div>
+        <div id="Project4" class="tabcontent">
+            <h3>Project 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae itaque voluptatem? Ea, nihil perferendis. Tempore accusantium reiciendis, nostrum unde necessitatibus consectetur exercitationem voluptate doloremque aspernatur quaerat? Est, vero iusto.</p>
+        </div>
+        <div id="Project5" class="tabcontent">
+            <h3>Project 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae itaque voluptatem? Ea, nihil perferendis. Tempore accusantium reiciendis, nostrum unde necessitatibus consectetur exercitationem voluptate doloremque aspernatur quaerat? Est, vero iusto.</p>
         </div>
     </div>
     <div id="footer">Footer</div>

@@ -46,25 +46,31 @@ li a:hover {
 #contentSelection{
     margin-bottom: 25px;
 }
-.accordion{
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
+.tabs{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tabs button{
+    background-color: inherit;
+    float: left;
     border: none;
     outline: none;
-    transition: 0.4s;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
 }
-.active, .accoridon:hover{
+.tabs button:hover{
+    background-color: #ddd;
+}
+.tabs button.active{
     background-color: #ccc;
 }
-.panel{
-    padding: 0 18px;
-    background-color: white;
+.tabcontent{
     display: none;
-    overflow: hidden;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
 
 
