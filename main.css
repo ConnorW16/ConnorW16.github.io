@@ -12,7 +12,6 @@ ul {
 } 
 li {
     float: left;
-    background-color: silver;
 }  
 li a {
     display: block;
