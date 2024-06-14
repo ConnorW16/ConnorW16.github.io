@@ -8,7 +8,9 @@
 }
 ul {
     margin-right: 5px;
+    overflow: hidden;
     float: right;
+    height: 100%;
 } 
 li {
     float: left;
