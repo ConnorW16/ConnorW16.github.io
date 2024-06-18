@@ -81,7 +81,6 @@ li a:hover {
 }
 .slide{
     display: none;
-    max-height: 250px;
 }
 .cursor{
     cursor: pointer;
