@@ -5,6 +5,10 @@ function moveSlide(n){
     showSlides(slideIndex += n);
 }
 
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
+
 function showSlides(n){
     let i;
     let slides = document.getElementsByClassName("slide");
