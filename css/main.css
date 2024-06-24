@@ -110,9 +110,8 @@ li a:hover {
     color: red;
     font-size: 12px;
     padding: 8px 12px;
-    margin: auto;
     position: absolute;
-    top: 0;
+    margin-left: 40%;
     background-color: rgba(0, 0, 0, 0.3);
 }
 .captions{
