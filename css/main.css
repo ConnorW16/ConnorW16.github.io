@@ -116,6 +116,9 @@ li a:hover {
     top: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.captions{
+    width: 100%;
+}
 .imageCaption{
     text-align: center;
     background-color: #222;
