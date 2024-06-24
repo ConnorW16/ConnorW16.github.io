@@ -100,7 +100,7 @@ li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 .next{
-    right: 0;
+    right: 21px;
     border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover{
