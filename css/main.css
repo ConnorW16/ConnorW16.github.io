@@ -127,6 +127,9 @@ li a:hover {
     color: white;
     height: 64px;
 }
+.row{
+    width: 40%;
+}
 .row:after{
     content: "";
     display: table;
