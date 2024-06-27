@@ -79,6 +79,9 @@ li a:hover {
 .imageContainer{
     position: relative;
 }
+.slides{
+    width: 60%;
+}
 .slide{
     display: none;
 }
@@ -125,7 +128,7 @@ li a:hover {
     height: 64px;
 }
 .row{
-    width: 30%;
+    width: 40%;
 }
 .row:after{
     content: "";
