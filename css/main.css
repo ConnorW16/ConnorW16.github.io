@@ -79,9 +79,6 @@ li a:hover {
 .imageContainer{
     position: relative;
 }
-.slides{
-    height: 100px;
-}
 .slide{
     display: none;
 }
