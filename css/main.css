@@ -83,10 +83,10 @@ li a:hover {
 .slides{
     width: 45%;
     float: left;
-    border: 2px solid black;
 }
 .slide{
     display: none;
+    border: 2px solid black;
 }
 .cursor{
     cursor: pointer;
