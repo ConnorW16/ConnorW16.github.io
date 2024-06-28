@@ -4,6 +4,9 @@ body{
 *{
     box-sizing: border-box;
 }
+img{
+    border: 2px solid black;
+}
 
 /* 1920 x 1080 */
 #header{
@@ -86,7 +89,6 @@ li a:hover {
 }
 .slide{
     display: none;
-    border: 2px solid black;
 }
 .cursor{
     cursor: pointer;
