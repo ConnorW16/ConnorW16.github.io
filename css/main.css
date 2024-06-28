@@ -141,6 +141,8 @@ li a:hover {
 .column{
     float: left;
     width: 25%;
+    height: 50px;
+    overflow: hidden;
 }
 .displayedImage{
     opacity: 0.6;
