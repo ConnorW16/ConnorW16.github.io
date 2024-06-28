@@ -147,6 +147,15 @@ li a:hover {
     height: 100px;
     overflow: hidden;
     border: 2px solid black;
+    position: relative;
+    text-align: center;
+    color: red;
+}
+.imageLabel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .displayedImage{
     opacity: 0.6;
