@@ -142,7 +142,7 @@ li a:hover {
 .column{
     float: left;
     width: 25%;
-    margin-left: 2px;
+    margin-left: 1px;
     height: 100px;
     overflow: hidden;
 }
