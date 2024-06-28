@@ -83,7 +83,6 @@ li a:hover {
 .slides{
     width: 45%;
     float: left;
-    height: auto;
 }
 .slide{
     display: none;
