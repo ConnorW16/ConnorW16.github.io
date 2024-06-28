@@ -78,7 +78,7 @@ li a:hover {
 
 .imageContainer{
     position: relative;
-    height: 1000px;
+    height: max-content;
 }
 .slides{
     width: 45%;
