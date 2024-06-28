@@ -134,7 +134,6 @@ li a:hover {
     width: 55%;
     float: right;
     margin-bottom: 5px;
-    border: 2px solid black;
 }
 .row:after{
     content: "";
