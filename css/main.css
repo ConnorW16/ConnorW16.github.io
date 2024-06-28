@@ -132,6 +132,7 @@ li a:hover {
 .row{
     width: 50%;
     float: right;
+    margin-bottom: 10px;
 }
 .row:after{
     content: "";
@@ -141,7 +142,8 @@ li a:hover {
 .column{
     float: left;
     width: 25%;
-    height: 50px;
+    margin-left: 10px;
+    height: 150px;
     overflow: hidden;
 }
 .displayedImage{
