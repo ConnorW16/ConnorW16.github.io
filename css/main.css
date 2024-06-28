@@ -81,7 +81,7 @@ li a:hover {
     overflow: auto;
 }
 .slides{
-    width: 45%;
+    width: 42%;
     float: left;
 }
 .slide{
@@ -130,7 +130,7 @@ li a:hover {
     height: 64px;
 }
 .row{
-    width: 55%;
+    width: 58%;
     float: right;
     margin-bottom: 2px;
 }
@@ -142,7 +142,7 @@ li a:hover {
 .column{
     float: left;
     width: 25%;
-    /* margin-left: 2px; */
+    margin-left: 2px;
     height: 100px;
     overflow: hidden;
 }
