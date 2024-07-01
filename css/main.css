@@ -87,10 +87,10 @@ li a:hover {
 }
 .slide{
     display: none;
+    transition: transform .2s;
 }
 .slide:hover{
-    opacity: 0.7;
-    cursor: pointer;
+    transform: scale(1.5);
 }
 .cursor{
     cursor: pointer;
