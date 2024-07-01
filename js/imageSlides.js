@@ -28,7 +28,7 @@ function showSlides(n){
 }
 
 var modal = document.getElementById("Modal");
-var img = document.getElementById("slide");
+var img = document.getElementById("slides");
 var modalImg = document.getElementById("imgM");
 img.onclick = function(){
   modal.style.display = "block";
