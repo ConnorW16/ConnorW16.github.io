@@ -26,3 +26,15 @@ function showSlides(n){
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+var modal = document.getElementById("Modal");
+var img = document.getElementById("slide");
+var modalImg = document.getElementById("imgM");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
