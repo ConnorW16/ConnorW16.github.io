@@ -166,8 +166,6 @@ li a:hover {
 
 
 #footer{
-    background-color: blueviolet;
-    border: 2px solid black;
     margin-bottom: 25px;
     padding: 5px;
     text-align: center;
@@ -182,4 +180,5 @@ li a:hover {
     text-decoration: none;
     font-size: 32px;
     color: black;
+    border: 2px solid black;
 }
