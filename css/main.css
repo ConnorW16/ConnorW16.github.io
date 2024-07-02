@@ -96,7 +96,6 @@ li a:hover {
     position: absolute;
     width: auto;
     padding: 16px;
-    margin-top: -65px;
     color: red;
     font-weight: bold;
     font-size: 20px;
@@ -106,7 +105,7 @@ li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 .next{
-    right: 21px;
+    float: right;
     border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover{
