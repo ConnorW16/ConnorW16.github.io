@@ -43,7 +43,7 @@
                 <div class="slides">
                     <a class="prev" onclick="moveSlide(-1)">&#10094</a>
                     <a class="next" onclick="moveSlide(1)">&#10095</a>
-                    
+
                     <div class="slide">
                         <div class="numberText">1 / 11</div>
                         <img src="img/IDPSQL/SQLdbConnection.png" style="width: 100%">
@@ -93,7 +93,7 @@
 
                 <div class="row">
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbConnection.png" style="width: 100%" onclick="currentSlide(1)" alt="DB Connection - This image shows the database connection file which is created automatically when following the setup process. It automatically sets values such as the database type, API, and the connection string for the specific database. The entities at the bottom of the documment are created manually which links to a table in the database so it knows where to get data from.">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbConnection.png" style="width: 100%" onclick="currentSlide(1)" alt="DB Connection - This image shows the database connection file which is created automatically when following the setup process. It automatically sets values such as the database type, links for GraphQL, and the connection string for the specific database. The entities at the bottom of the documment are created manually which links to a table in the database so it knows where to get data from.">
                         <div class="imageLabel" onclick="currentSlide(1)">DB Connection</div>
                     </div>
                     <div class="column">
@@ -101,44 +101,48 @@
                         <div class="imageLabel" onclick="currentSlide(2)">Filter Labels</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbLabelDisplay.png" style="width: 100%" onclick="currentSlide(3)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(3)">DB Connection</div>
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbLabelDisplay.png" style="width: 100%" onclick="currentSlide(3)" alt="Filter Options Display - The beginning of this image shows the remaining HTML, which creates the buttons and a label. The function in the script tags below determines which components need to be displayed, depending on which table from the database is being queried.">
+                        <div class="imageLabel" onclick="currentSlide(3)">Filter Options Display</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbFilterSelection.png" style="width: 100%" onclick="currentSlide(4)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(4)">DB Connection</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDataRetreival.png" style="width: 100%" onclick="currentSlide(5)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(5)">DB Connection</div>
-                    </div>
-                    <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDisplayData.png" style="width: 100%" onclick="currentSlide(6)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(6)">DB Connection</div>
-                    </div>
-                    <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDataRetreival2.png" style="width: 100%" onclick="currentSlide(7)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(7)">DB Connection</div>
-                    </div>
-                    <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDataRetreival3.png" style="width: 100%" onclick="currentSlide(8)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(8)">DB Connection</div>
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbFilterSelection.png" style="width: 100%" onclick="currentSlide(4)" alt="Filter Selection - This image shows the functions called when changing the values within the filter boxes. The selected option is set to a variable which is then returned as this information is required in another function further down in the code.">
+                        <div class="imageLabel" onclick="currentSlide(4)">Filter Selection</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbStyling.png" style="width: 100%" onclick="currentSlide(9)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(9)">DB Connection</div>
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDataRetreival.png" style="width: 100%" onclick="currentSlide(5)" alt="Database Query #1 - This is the beginning of the function which queries the database. As I am testing performance, I set a variable up at the beginning of the query function to beginning recording the time it will take to retrieve the related data. The function then gets the elements of the HTML to place the results in, and allocates the selected filters to variables. The query is then setup, consisting of the initial part of the link (the endpoint), the first endpoint filter, and then the second endpoint filter. This uses GraphQL logic and the entities setup previously in the DB Connection section, along with the filters selected and saved to the type variables in the function. After returing a result and saving it to a json, the response time clock is then stopped and is posted into the element designated.">
+                        <div class="imageLabel" onclick="currentSlide(5)">Database Query #1</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdb.png" style="width: 100%" onclick="currentSlide(10)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(10)">DB Connection</div>
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDisplayData.png" style="width: 100%" onclick="currentSlide(6)" alt="Database Query #2 - This section of the function handles displaying the data on the page. It begins creating a table for each of the results returned. Then, it allocates the data into the correct sections of the table, iterating through all the results.">
+                        <div class="imageLabel" onclick="currentSlide(6)">Database Query #2</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbExampleData.png" style="width: 100%" onclick="currentSlide(11)" alt="DB Connection">
-                        <div class="imageLabel" onclick="currentSlide(11)">DB Connection</div>
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDataRetreival2.png" style="width: 100%" onclick="currentSlide(7)" alt="Database Query #3 - This is an example of one of the other query functions for another table. This is mostly the same as the other, apart from only having a single filter option for this table which made the query logic slightly easier.">
+                        <div class="imageLabel" onclick="currentSlide(7)">Database Query #3</div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDataRetreival3.png" style="width: 100%" onclick="currentSlide(8)" alt="Database Query #4 - This is the final query function for the last table. This, again, is mostly the same as the previous example, also with only one filter option. When querying data, it would sometimes return in an array, for this reason the string version of the locations had to translated into variables which could then be used for the filter. This is the only addition of the function, compared to the other examples.">
+                        <div class="imageLabel" onclick="currentSlide(8)">Database Query #4</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbReturnedData.png" style="width: 100%" onclick="currentSlide(9)" alt="Example of Returned Data - This image is an exmaple of what the returned data looks like on the front end. These deliverables were created with performance testing in mind, so the design of the front ends was simplistic and objective oriented.">
+                        <div class="imageLabel" onclick="currentSlide(9)">Example of Returned Data</div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbStyling.png" style="width: 100%" onclick="currentSlide(9)" alt="Styling - As mentioned previously, the front ends for my deliverables only had to be practical so that people could use them for me to collect my data. This image shows the CSS behind the webpage.">
+                        <div class="imageLabel" onclick="currentSlide(10)">Styling</div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdb.png" style="width: 100%" onclick="currentSlide(10)" alt="SSMS Object Explorer - This image shows the object explorer within SSMS (SQL Server Management Studio) which shows the tables created within my SQL database.">
+                        <div class="imageLabel" onclick="currentSlide(11)">SSMS Object Explorer</div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbExampleData.png" style="width: 100%" onclick="currentSlide(11)" alt="SQL DB Example Data - This image displays some example data retrieved from all tables within the database.">
+                        <div class="imageLabel" onclick="currentSlide(12)">SQL DB Example Data</div>
                     </div>
                 </div>
             </div>
