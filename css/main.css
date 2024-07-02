@@ -128,7 +128,7 @@ li a:hover {
     background-color: #222;
     padding: 2px 50px;
     color: white;
-    height: 64px;
+    /* height: 64px; */
     overflow: auto;
 }
 .row{
