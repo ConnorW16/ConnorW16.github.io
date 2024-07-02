@@ -88,9 +88,6 @@ li a:hover {
 .slide{
     display: none;
 }
-.slide:hover{
-    
-}
 .cursor{
     cursor: pointer;
 }
