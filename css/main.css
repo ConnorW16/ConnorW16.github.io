@@ -105,7 +105,7 @@ li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 .next{
-    float: right;
+    right: 50%;
     border-radius: 3px 0 0 3px;
 }
 .prev:hover, .next:hover{
