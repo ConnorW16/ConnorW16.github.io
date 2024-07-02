@@ -96,7 +96,7 @@ li a:hover {
     position: absolute;
     width: auto;
     padding: 16px;
-    top: 50%;
+    margin-top: 50%;
     transform: translate(-50%, -50%);
     color: red;
     font-weight: bold;
