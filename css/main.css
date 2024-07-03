@@ -87,7 +87,6 @@ li a:hover {
 }
 .slide{
     display: none;
-    position: relative;
 }
 .cursor{
     cursor: pointer;
