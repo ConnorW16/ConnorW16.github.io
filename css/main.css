@@ -88,6 +88,7 @@ li a:hover {
 .slide{
     display: none;
     position: relative;
+    cursor: none;
 }
 .img-magnifier-glass{
     position: absolute;
