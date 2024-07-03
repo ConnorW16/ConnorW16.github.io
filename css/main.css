@@ -87,8 +87,6 @@ li a:hover {
 }
 .slide{
     display: none;
-}
-.imgMagnify{
     position: relative;
 }
 .img-magnifier-glass{
