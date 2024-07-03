@@ -40,15 +40,21 @@
                 </div>
             </div>
 
+            
+
             <div class="imageContainer">
                 <div class="slides">
                     <a class="prev" onclick="moveSlide(-1)">&#10094</a>
                     <a class="next" onclick="moveSlide(1)">&#10095</a>
 
+                    <script>
+                        magnify("slideimg", 3);
+                    </script>
+
                     <div class="slide">
                         <div class="numberText">1 / 12</div>
                         <div class="imgMagnify">
-                            <img src="img/IDPSQL/SQLdbConnection.png" style="width: 100%">
+                            <img id="slideimg" src="img/IDPSQL/SQLdbConnection.png" style="width: 100%">
                         </div>
                     </div>
                     <div class="slide">
