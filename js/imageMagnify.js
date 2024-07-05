@@ -41,15 +41,15 @@ function imageZoom(imgID, resultID){
     }
     function getCursorPos(e) {
         var a, x = 0, y = 0;
-        e = e || window.event;
+        e = e || window.Event;
         
         a = img.getBoundingClientRect();
         
         x = e.pageX - a.left;
         y = e.pageY - a.top;
         
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
+        x = x - window.scrollX;
+        y = y - window.scrollY;
         return {x : x, y : y};
     }
 }
