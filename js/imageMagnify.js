@@ -1,55 +1,33 @@
-function imageZoom(imgID, resultID){
-    var img, lens, result, cx, cy;
-    img = document.getElementById(imgID);
-    result = document.getElementById(resultID);
-    
-    lens = document.createElement("DIV");
-    lens.setAttribute("class", "img-zoom-lens");
-    
-    img.parentElement.insertBefore(lens, img);
-    
-    cx = result.offsetWidth / lens.offsetWidth;
-    cy = result.offsetHeight / lens.offsetHeight;
-    
-    result.style.backgroundImage = "url('" + img.src + "')";
-    result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
-    
-    lens.addEventListener("mousemove", moveLens);
-    img.addEventListener("mousemove", moveLens);
-    
-    lens.addEventListener("touchmove", moveLens);
-    img.addEventListener("touchmove", moveLens);
-    function moveLens(e) {
-        var pos, x, y;
-        
-        e.preventDefault();
-        
-        pos = getCursorPos(e);
-        
-        x = pos.x - (lens.offsetWidth / 2);
-        y = pos.y - (lens.offsetHeight / 2);
-        
-        if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
-        if (x < 0) {x = 0;}
-        if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
-        if (y < 0) {y = 0;}
-        
-        lens.style.left = x + "px";
-        lens.style.top = y + "px";
-        
-        result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+class ImageZoomer {
+    constructor(image) {
+      let parentEl = image.parentNode;
+      this.image = image;
+      this.zoomedImage = image.cloneNode();
+      this.zoomWindow = createZoomWindow(this.zoomedImage);
+      this.zoomBox = createZoomBox();
+      this.zoomContainer = createZoomContainer(image, this.zoomBox);
+      parentEl.appendChild(this.zoomContainer);
+      parentEl.appendChild(this.zoomWindow);
     }
-    function getCursorPos(e) {
-        var a, x = 0, y = 0;
-        e = e || window.event;
-        
-        a = img.getBoundingClientRect();
-        
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-        
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return {x : x, y : y};
-    }
-}
+  }
+  function createZoomBox() {
+    let zoomBox = document.createElement('div');
+    zoomBox.classList.add('zoom-box');
+    return zoomBox;
+  }
+  function createZoomContainer(image, zoomBox) {
+    let zoomContainer = document.createElement('div');
+    zoomContainer.classList.add('zoom-container');
+    zoomContainer.appendChild(image);
+    zoomContainer.appendChild(zoomBox);
+    return zoomContainer;
+  }
+  function createZoomWindow(zoomedImage) {
+    let zoomWindow = document.createElement('div');
+    zoomWindow.classList.add('zoom-window');
+    zoomedImage.setAttribute('aria-hidden', 'true');
+    zoomWindow.appendChild(zoomedImage);
+    return zoomWindow;
+  }
+  let image = document.querySelector('.image-zoomer-demo img');
+  let zoomer = new ImageZoomer(image);
