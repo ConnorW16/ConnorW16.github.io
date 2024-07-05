@@ -90,7 +90,7 @@ li a:hover {
     display: none;
     position: relative;
 }
-.slideIMG:hover{
+.slide:hover{
     background-color: rgba(0, 0, 0, 0.6)
 }
 .fullscreenLabel{
