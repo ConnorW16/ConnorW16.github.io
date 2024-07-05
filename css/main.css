@@ -88,6 +88,7 @@ li a:hover {
 .slide{
     display: none;
     position: relative;
+    cursor: pointer;
 }
 .slide:hover{
     background-color: rgba(0, 0, 0, 0.6);
