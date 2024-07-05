@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slides.forEach(slide => {
         slide.addEventListener('click', () => {
             overlayImage.src = slide.src;
-            console.log(slide.img.src)
+            // console.log(slide.img.src)
             overlay.style.display = 'flex';
         });
     });
