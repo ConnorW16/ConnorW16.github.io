@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.slideIMG');
     const overlay = document.getElementById('overlay');
     const overlayImage = document.getElementById('overlay-image');
     const closeBtn = document.querySelector('.close');
 
     slides.forEach(slide => {
         slide.addEventListener('click', () => {
-            overlayImage.src = slide.img.getAttribute('src');
+            overlayImage.src = slide.src;
             overlay.style.display = 'flex';
         });
     });
