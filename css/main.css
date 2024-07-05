@@ -90,6 +90,9 @@ li a:hover {
     display: none;
     position: relative;
 }
+.slideIMG:hover{
+    background-color: rgba(0, 0, 0, 0.6)
+}
 .fullscreenLabel{
     position: absolute;
     top: 50%;
