@@ -92,9 +92,6 @@ li a:hover {
 }
 .slides:hover{
     background-color: rgba(0, 0, 0, 0.6);
-    .fullscreenLabel{
-        display: block;
-    }
 }
 .fullscreenLabel{
     position: absolute;
