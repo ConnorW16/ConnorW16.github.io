@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('overlay');
     const overlayImage = document.getElementById('overlay-image');
     const closeBtn = document.querySelector('.close');
+    const infoBtn = document.querySelector('.imgInfo');
 
     slides.forEach(slide => {
         slide.addEventListener('click', () => {
@@ -13,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeBtn.addEventListener('click', () => {
         overlay.style.display = 'none';
+    });
+
+    infoBtn.addEventListener('hover', () => {
+        console.log("bazinga");
     });
 
     overlay.addEventListener('click', (e) => {
