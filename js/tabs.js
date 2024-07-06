@@ -1,5 +1,4 @@
-function openProject(evt, name){
-    var projectName = name
+function openProject(evt, projectName){
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -16,5 +15,4 @@ function openProject(evt, name){
     evt.currentTarget.className += " active";
 
     console.log(projectName);
-    return projectName;
 }
