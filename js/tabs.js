@@ -1,4 +1,4 @@
-var projectName;
+var projectName = "test";
 
 function openProject(evt, projectName){
     var i, tabcontent, tablinks;
