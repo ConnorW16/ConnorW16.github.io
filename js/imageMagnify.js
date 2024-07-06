@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.display = 'none';
     });
 
-    infoBtn.addEventListener('hover', () => {
+    infoBtn.addEventListener('mouseover', () => {
         console.log("bazinga");
     });
 
