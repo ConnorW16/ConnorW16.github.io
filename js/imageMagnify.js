@@ -16,10 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.display = 'none';
     });
 
-    infoBtn.addEventListener('mouseover', () => {
-        console.log("bazinga");
-    });
-
     overlay.addEventListener('click', (e) => {
         if (e.target !== overlayImage) {
             overlay.style.display = 'none';
