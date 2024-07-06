@@ -1,7 +1,3 @@
-let slideIndex = 1
-
-console.log(projectName);
-
 if (projectName == 'Project1'){
     slideIndex = 1;
 } else if (projectName == 'Project2'){
