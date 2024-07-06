@@ -1,4 +1,11 @@
-let slideIndex = 1;
+let slideIndex = 1
+
+if (projectName = 'Project1'){
+    slideIndex = 1;
+} else if (projectName = 'Project2'){
+    slideIndex = 12;
+}
+
 showSlides(slideIndex);
 
 function moveSlide(n){
