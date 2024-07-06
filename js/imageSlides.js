@@ -6,6 +6,8 @@ if (projectName == 'Project1'){
     slideIndex = 13;
 }
 
+console.log(projectName);
+
 showSlides(slideIndex);
 
 function moveSlide(n){
