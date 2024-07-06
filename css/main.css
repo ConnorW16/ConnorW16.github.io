@@ -202,19 +202,6 @@ li a:hover {
     color: white;
     cursor: pointer;
 }
-.imgInfo{
-    position: absolute;
-    top: 75px;
-    right: 17px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid white;
-    width: 51px;
-    height: 51px;
-    padding-left: 18px;
-}
 
 
 #footer{
