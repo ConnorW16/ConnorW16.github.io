@@ -1,4 +1,4 @@
-console.log(test);
+console.log(projectName);
 
 let slideIndex = 1
 
