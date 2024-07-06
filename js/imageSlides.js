@@ -1,9 +1,9 @@
 let slideIndex = 1
 
-if (projectName = 'Project1'){
+if (projectName == 'Project1'){
     slideIndex = 1;
-} else if (projectName = 'Project2'){
-    slideIndex = 12;
+} else if (projectName == 'Project2'){
+    slideIndex = 13;
 }
 
 showSlides(slideIndex);
@@ -20,8 +20,8 @@ function showSlides(n){
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if (n > 12 && projectName == 'Project1') {slideIndex = 1}
+    if (n > 12 && projectName == 'Project2') {slideIndex = 13}
     for (i = 0; i < slides.length; i++){
         slides[i].style.display = "none";
     }
