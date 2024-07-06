@@ -1,4 +1,5 @@
-function openProject(evt, projectName){
+function openProject(evt, name){
+    var projectName = name
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,6 +14,6 @@ function openProject(evt, projectName){
 
     document.getElementById(projectName).style.display = "block";
     evt.currentTarget.className += " active";
-    
+
     return projectName;
 }
