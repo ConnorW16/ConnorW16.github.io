@@ -21,7 +21,7 @@ function showSlides(n){
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
     if (n > 12 && projectName == 'Project1') {slideIndex = 1}
-    if (n > 12 && projectName == 'Project2') {slideIndex = 13}
+    if (n > 24 && projectName == 'Project2') {slideIndex = 13}
     for (i = 0; i < slides.length; i++){
         slides[i].style.display = "none";
     }
