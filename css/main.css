@@ -204,8 +204,8 @@ li a:hover {
 }
 .imgInfo{
     position: absolute;
-    top: 60px;
-    right: 40px;
+    top: 75px;
+    right: 34px;
     font-size: 40px;
     color: white;
     cursor: pointer;
