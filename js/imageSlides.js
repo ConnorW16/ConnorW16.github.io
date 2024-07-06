@@ -1,3 +1,5 @@
+console.log(test);
+
 let slideIndex = 1
 
 if (projectName == 'Project1'){
