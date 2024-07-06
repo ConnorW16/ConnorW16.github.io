@@ -1,5 +1,6 @@
+var test = "boo";
+
 function openProject(evt, projectName){
-    var projectName;
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
