@@ -202,6 +202,16 @@ li a:hover {
     color: white;
     cursor: pointer;
 }
+.imgInfo{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px black;
+}
 
 
 #footer{
