@@ -11,12 +11,13 @@ function showSlides(n){
     let i;
     slideIndex = n;
     let currentTab = document.querySelector('.tablinks active');
+    let tabValue = currentTab.innerHTML;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
 
-    console.log(currentTab);
+    console.log(tabValue);
 
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
