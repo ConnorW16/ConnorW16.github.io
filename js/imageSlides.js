@@ -1,4 +1,7 @@
 let slideIndex;
+import {projectName} from "./tabs";
+projectname = projectName;
+console.log(projectname);
 
 function moveSlide(n){
     showSlides(slideIndex += n);
