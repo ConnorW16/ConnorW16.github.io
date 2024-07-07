@@ -6,7 +6,7 @@ function openProject(evt, projectName){
         tabcontent[i].style.display = "none";
     }
 
-    tablinks = document.getElementsByClassName("tablin-ks");
+    tablinks = document.getElementsByClassName("tablinks");
     for(i = 0; i < tablinks.length; i++){
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
