@@ -31,7 +31,6 @@
         </div>
 
         
-        
         <div id="Project1" class="tabcontent">
             <h3>Dissertation SQL Database and Front End</h3>
             <p>For my dissertation, I created two deliverables, a SQL and NoSQL database with front ends to use and test them. A comparison was made between them to analyse retreival time, perceived retreival time, scalability, and accuracy. The goal of this was to conclude which solution performed better while containing data related to healthcare. <br> <br>
@@ -117,7 +116,7 @@
 
                 <div class="row">
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbConnection.png" style="width: 100%" onclick="currentSlide(1)" alt="DB Connection - This image shows the database connection file which is created automatically when following the setup process. It automatically sets values such as the database type, links for GraphQL, and the connection string for the specific database. The entities at the bottom of the document are created manually which links to a table in the database so it knows where to get data from.">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbConnection.png" style="width: 100%" onclick="currentSlide(1)" alt="DB Connection - This image shows the database connection file which is created automatically when following the setup process. It automatically sets values such as the database type, links for GraphQL and REST, and the connection string for the specific database. The entities at the bottom of the document are created manually which links to a table in the database so it knows where to get data from.">
                         <div class="imageLabel" onclick="currentSlide(1)">DB Connection</div>
                     </div>
                     <div class="column">
@@ -139,7 +138,7 @@
                         <div class="imageLabel" onclick="currentSlide(5)">Database Query #1</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDisplayData.png" style="width: 100%" onclick="currentSlide(6)" alt="Database Query #2 - This section of the function handles displaying the data on the page. It begins creating a table for each of the results returned. Then, it allocates the data into the correct sections of the table, iterating through all the results.">
+                        <img class="displayedImage cursor" src="img/IDPSQL/SQLdbDisplayData.png" style="width: 100%" onclick="currentSlide(6)" alt="Display Data - This section of the function handles displaying the data on the page. It begins creating a table for each of the results returned. Then, it allocates the data into the correct sections of the table, iterating through all the results.">
                         <div class="imageLabel" onclick="currentSlide(6)">Display Data</div>
                     </div>
                     <div class="column">
@@ -257,38 +256,38 @@
 
                 <div class="row">
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbConnection.png" style="width: 100%" onclick="currentSlide(13)" alt="DB Connection - This image shows the database connection file which is created automatically when following the setup process. It automatically sets values such as the database type, links for GraphQL, and the connection string for the specific database. The entities at the bottom of the document are created manually which links to a table in the database so it knows where to get data from.">
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbConnection.png" style="width: 100%" onclick="currentSlide(13)" alt="DB Connection - This image shows the database connection file which is created automatically when following the setup process. It automatically sets values such as the database type, links for GraphQL, and the connection string for the specific database. The entities at the bottom of the document are created manually which links to a container in the database so it knows where to get data from.">
                         <div class="imageLabel" onclick="currentSlide(13)">DB Connection</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbConnection2.png" style="width: 100%" onclick="currentSlide(14)" alt="Filter Labels - This form contains the labels which can be used for filtering the data from the database. When the onchange listener is triggered, a specific function is run which will take what has been selected and save it to a variable for use in the search query.">
-                        <div class="imageLabel" onclick="currentSlide(14)">Filter Labels</div>
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbConnection2.png" style="width: 100%" onclick="currentSlide(14)" alt="DB Connection 2 - This image shows another file that was needed to be created to connect the front end to the database. This document was not needed for the SQL system, however it s needed for the NoSQL system for the front end to be able to assign data types to the different variables being retreived.">
+                        <div class="imageLabel" onclick="currentSlide(14)">DB Connection #2</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbLabelForm.png" style="width: 100%" onclick="currentSlide(15)" alt="Filter Options Display - The beginning of this image shows the remaining HTML, which creates the buttons and a label. The function in the script tags below determines which components need to be displayed, depending on which table from the database is being queried.">
-                        <div class="imageLabel" onclick="currentSlide(15)">Filter Options Display</div>
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbLabelForm.png" style="width: 100%" onclick="currentSlide(15)" alt="Filter Labels - This form contains the labels which can be used for filtering the data from the database. When the onchange listener is triggered, a specific function is run which will take what has been selected and save it to a variable for use in the search query.">
+                        <div class="imageLabel" onclick="currentSlide(15)">Filter Labels</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbLabelDisplay.png" style="width: 100%" onclick="currentSlide(16)" alt="Filter Selection - This image shows the functions called when changing the values within the filter boxes. The selected option is set to a variable which is then returned as this information is required in another function further down in the code.">
-                        <div class="imageLabel" onclick="currentSlide(16)">Filter Selection</div>
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbLabelDisplay.png" style="width: 100%" onclick="currentSlide(16)" alt="Filter Options Display - The beginning of this image shows the remaining HTML, which creates the buttons and a label. The function in the script tags below determines which components need to be displayed, depending on which table from the database is being queried.">
+                        <div class="imageLabel" onclick="currentSlide(16)">Filter Options Display</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbFilterSelection.png" style="width: 100%" onclick="currentSlide(17)" alt="Database Query #1 - This is the beginning of the function which queries the database. As I am testing performance, I set a variable up at the beginning of the query function to begin recording the time it will take to retrieve the related data. The function then gets the elements of the HTML to place the results in, and allocates the selected filters to variables. The query is then setup, consisting of the initial part of the link (the endpoint), the first endpoint filter, and then the second endpoint filter. This uses GraphQL logic and the entities setup previously in the DB Connection section, along with the filters selected and saved to the type variables in the function. After returing a result and saving it to a json, the response time clock is then stopped and is posted into the element designated.">
-                        <div class="imageLabel" onclick="currentSlide(17)">Database Query #1</div>
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbFilterSelection.png" style="width: 100%" onclick="currentSlide(17)" alt="Filter Selection - This image shows the functions called when changing the values within the filter boxes. The selected option is set to a variable which is then returned as this information is required in another function further down in the code.">
+                        <div class="imageLabel" onclick="currentSlide(17)">Filter Selection</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbDataRetreival.png" style="width: 100%" onclick="currentSlide(18)" alt="Database Query #2 - This section of the function handles displaying the data on the page. It begins creating a table for each of the results returned. Then, it allocates the data into the correct sections of the table, iterating through all the results.">
-                        <div class="imageLabel" onclick="currentSlide(18)">Database Query #2</div>
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbDataRetreival.png" style="width: 100%" onclick="currentSlide(18)" alt="Database Query #1 - This is the beginning of the function which queries the database. As I am testing performance, I set a variable up at the beginning of the query function to begin recording the time it will take to retrieve the related data. The function then gets the elements of the HTML to place the results in, and allocates the selected filters to variables. The query is then where it gets different compared to the SQL deliverable. It begins with the container from the database, then sets the filters which uses the allocated variables which the user selected. The query then needs to list all the items which needs to be retreived from the database. After returing a result and saving it to a json, the response time clock is then stopped and is posted into the element designated.">
+                        <div class="imageLabel" onclick="currentSlide(18)">Database Query #1</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbDisplayData.png" style="width: 100%" onclick="currentSlide(19)" alt="Database Query #3 - This is an example of one of the other query functions for another table. This is mostly the same as the other, apart from only having a single filter option for this table which made the query logic slightly easier.">
-                        <div class="imageLabel" onclick="currentSlide(19)">Database Query #3</div>
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbDisplayData.png" style="width: 100%" onclick="currentSlide(19)" alt="Display Data - This section of the function handles displaying the data on the page. It begins creating a table for each of the results returned. Then, it allocates the data into the correct sections of the table, iterating through all the results.">
+                        <div class="imageLabel" onclick="currentSlide(19)">Display Data</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbDataRetreival2.png" style="width: 100%" onclick="currentSlide(20)" alt="Database Query #4 - This is the final query function for the last table. This, again, is mostly the same as the previous example, also with only one filter option. When querying data, it would sometimes return in an array, for this reason the string version of the locations had to translated into variables which could then be used for the filter. This is the only addition of the function, compared to the other examples.">
-                        <div class="imageLabel" onclick="currentSlide(20)">Database Query #4</div>
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbDataRetreival2.png" style="width: 100%" onclick="currentSlide(20)" alt="Database Query #2 - This is an example of the other query functions for the other container. This is the same as the other, apart from retreiving data fron a different entity within the database, and pulling different variables to match the different container.">
+                        <div class="imageLabel" onclick="currentSlide(20)">Database Query #2</div>
                     </div>
                 </div>
                 <div class="row">
@@ -301,11 +300,11 @@
                         <div class="imageLabel" onclick="currentSlide(22)">Styling</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdb.png" style="width: 100%" onclick="currentSlide(23)" alt="SSMS Object Explorer - This image shows the object explorer within SSMS (SQL Server Management Studio) which shows the tables created within my SQL database.">
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdb.png" style="width: 100%" onclick="currentSlide(23)" alt="Cosmos DB Data Explorer - This image shows the data explorer within the Cosmos DB dashboard which shows the containers created within my NoSQL database.">
                         <div class="imageLabel" onclick="currentSlide(23)">SSMS Object Explorer</div>
                     </div>
                     <div class="column">
-                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbExampleData.png" style="width: 100%" onclick="currentSlide(24)" alt="SQL DB Example Data - This image displays some example data retrieved from all tables within the database.">
+                        <img class="displayedImage cursor" src="img/IDPNoSQL/NoSQLdbExampleData.png" style="width: 100%" onclick="currentSlide(24)" alt="NoSQL DB Example Data - This image displays some example data within one of the containers in the database.">
                         <div class="imageLabel" onclick="currentSlide(24)">SQL DB Example Data</div>
                     </div>
                 </div>
