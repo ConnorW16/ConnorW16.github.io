@@ -16,5 +16,5 @@ function openProject(evt, projectName){
 }
 
 function captions(){
-    document.getElementsByClassName("captions").innerHTML += "<div class='imageCaption'><p id='caption'></p></div>";
+    document.getElementById("captions").innerHTML += "<div class='imageCaption'><p id='caption'></p></div>";
 }
