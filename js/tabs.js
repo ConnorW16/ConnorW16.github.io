@@ -6,10 +6,12 @@ function openProject(evt, projectName){
         tabcontent[i].style.display = "none";
     }
 
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablin-ks");
     for(i = 0; i < tablinks.length; i++){
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
+
+    document.getElementById("captions").innerHTML += "<div class='imageCaption'><p id='caption'></p></div>";
 
     document.getElementById(projectName).style.display = "block";
     evt.currentTarget.className += " active";
