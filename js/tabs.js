@@ -1,5 +1,3 @@
-let projectName;
-
 function openProject(evt, projectName){
     var i, tabcontent, tablinks;
     projectName = projectName;
@@ -18,3 +16,5 @@ function openProject(evt, projectName){
     evt.currentTarget.className += " active";
     return projectName;
 }
+
+export const projectName = projectName;
