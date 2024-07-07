@@ -15,5 +15,3 @@ function openProject(evt, projectName){
     document.getElementById(projectName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-export const projectName = projectName;
