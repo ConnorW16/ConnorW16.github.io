@@ -1,4 +1,5 @@
 let slideIndex;
+var projectName;
 
 function moveSlide(n){
     showSlides(slideIndex += n);
