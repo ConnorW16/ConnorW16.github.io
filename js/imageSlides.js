@@ -1,4 +1,4 @@
-// let slideIndex = 1;
+let slideIndex = 13;
 
 function moveSlide(n){
     showSlides(slideIndex += n);
