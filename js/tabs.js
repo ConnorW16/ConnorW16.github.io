@@ -14,7 +14,3 @@ function openProject(evt, projectName){
     document.getElementById(projectName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-function captions(){
-    document.getElementById("captions").innerHTML += "<div class='imageCaption'><p id='caption'></p></div>";
-}
