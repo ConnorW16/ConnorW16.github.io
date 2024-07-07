@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('overlay');
     const overlayImage = document.getElementById('overlay-image');
     const closeBtn = document.querySelector('.close');
-    const infoBtn = document.querySelector('.imgInfo');
 
     slides.forEach(slide => {
         slide.addEventListener('click', () => {
