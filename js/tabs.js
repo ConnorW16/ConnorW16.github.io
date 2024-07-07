@@ -11,8 +11,7 @@ function openProject(evt, projectName){
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    captions = document.getElementsByClassName("captions");
-    captions.innerHTML += "<div class='imageCaption'><p id='caption'></p></div>";
+    document.getElementsByClassName("captions").innerHTML += "<div class='imageCaption'><p id='caption'></p></div>";
 
     document.getElementById(projectName).style.display = "block";
     evt.currentTarget.className += " active";
