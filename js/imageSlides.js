@@ -1,4 +1,4 @@
-let slideIndex = n;
+let slideIndex;
 
 function moveSlide(n){
     showSlides(slideIndex += n);
@@ -9,6 +9,7 @@ function currentSlide(n){
 }
 function showSlides(n){
     let i;
+    slideIndex = n;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
@@ -24,5 +25,3 @@ function showSlides(n){
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-console.log(n);
