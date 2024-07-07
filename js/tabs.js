@@ -14,7 +14,6 @@ function openProject(evt, projectName){
 
     document.getElementById(projectName).style.display = "block";
     evt.currentTarget.className += " active";
-    return projectName;
 }
 
 export const projectName = projectName;
