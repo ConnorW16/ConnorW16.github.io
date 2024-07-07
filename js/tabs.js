@@ -1,6 +1,5 @@
 function openProject(evt, projectName){
     var i, tabcontent, tablinks;
-    projectName = projectName;
 
     tabcontent = document.getElementsByClassName("tabcontent");
     for(i = 0; i < tabcontent.length; i++){
