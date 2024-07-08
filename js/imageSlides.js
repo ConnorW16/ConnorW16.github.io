@@ -10,7 +10,7 @@ function currentSlide(n){
 function showSlides(n){
     let i;
     slideIndex = n;
-    let currentTab = document.querySelector('.tablinks active');
+    let currentTab = document.querySelector('.tablinks');
     let tabValue = currentTab.innerHTML;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
