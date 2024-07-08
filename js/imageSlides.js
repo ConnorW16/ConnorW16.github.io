@@ -10,8 +10,6 @@ function currentSlide(n){
 function showSlides(n){
     let i;
     slideIndex = n;
-    let currentTab = document.querySelector('.tablinks');
-    let tabValue = currentTab.innerHTML;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
@@ -31,4 +29,7 @@ function showSlides(n){
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
     captionText2.innerHTML = dots[slideIndex-1].alt;
+
+    let currentTab = document.querySelector('.tablinks active');
+    let tabValue = currentTab.innerHTML;
 }
