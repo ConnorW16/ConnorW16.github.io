@@ -15,8 +15,6 @@ function showSlides(n){
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
 
-    console.log(tabValue);
-
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++){
@@ -32,4 +30,5 @@ function showSlides(n){
 
     let currentTab = document.querySelector('.tablinks active');
     let tabValue = currentTab.innerHTML;
+    console.log(tabValue);
 }
