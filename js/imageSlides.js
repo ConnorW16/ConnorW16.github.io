@@ -17,6 +17,7 @@ function showSlides(n, tab){
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
+    let captionText3 = document.getElementById("caption3");
     
     if(n > 12 && currentTab == 'Project1'){
         slideIndex = 1;
@@ -41,4 +42,5 @@ function showSlides(n, tab){
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
     captionText2.innerHTML = dots[slideIndex-1].alt;
+    captionText3.innerHTML = dots[slideIndex-1].alt;
 }
