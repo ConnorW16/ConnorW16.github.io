@@ -1,8 +1,9 @@
 let slideIndex;
 let currentTab;
 
-function moveSlide(n){
-    showSlides(slideIndex += n);
+function moveSlide(n, moveTab){
+    currentTab = moveTab;
+    showSlides(slideIndex += n, currentTab);
 }
 
 function currentSlide(n){
