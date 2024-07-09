@@ -31,6 +31,12 @@ function showSlides(n, tab){
     if(n < 13 && currentTab == 'Project2'){
         slideIndex = 24;
     }
+    if(n > 48 && currentTab == 'Project3'){
+        slideIndex = 25;
+    }
+    if(n < 25 && currentTab == 'Project3'){
+        slideIndex = 48;
+    }
 
     for (i = 0; i < slides.length; i++){
         slides[i].style.display = "none";
