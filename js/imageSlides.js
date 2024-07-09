@@ -32,7 +32,9 @@ function showSlides(n){
     captionText.innerHTML = dots[slideIndex-1].alt;
     captionText2.innerHTML = dots[slideIndex-1].alt;
 
-    window.setTimeout('', 5000)
+    window.setTimeout(findTab(), 5000)
+}
+function findTab(){
     if (document.querySelector('.tablinks active') != null){
         let currentTab = document.querySelector('.tablinks acvtive');
         let tabValue = currentTab.innerHTML;
