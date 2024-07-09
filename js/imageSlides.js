@@ -1,5 +1,5 @@
 let slideIndex;
-let currentTab;
+const currentTab = '';
 
 function moveSlide(n){
     showSlides(slideIndex += n);
@@ -12,13 +12,12 @@ function showSlides(n, tab){
     let i;
     slideIndex = n;
     currentTab = tab;
-    let lengthFilter = currentTab;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
 
-    console.log(lengthFilter);
+    console.log(currentTab);
     
     if(n > 12 && currentTab == 'Project1'){
         slideIndex = 2;
