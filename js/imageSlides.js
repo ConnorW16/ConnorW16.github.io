@@ -18,6 +18,15 @@ function showSlides(n){
     let captionText2 = document.getElementById("caption2");
 
     // console.log(tabValue);
+
+    if (document.querySelector('.tablinks active') != null){
+        let currentTab = document.querySelector('.tablinks acvtive');
+        let tabValue = currentTab.innerHTML;
+        console.log(tabValue);
+    }
+    else{
+        console.log("null");
+    }
     
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
@@ -31,16 +40,4 @@ function showSlides(n){
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
     captionText2.innerHTML = dots[slideIndex-1].alt;
-
-    window.setTimeout(findTab(), 5000)
-}
-function findTab(){
-    if (document.querySelector('.tablinks active') != null){
-        let currentTab = document.querySelector('.tablinks acvtive');
-        let tabValue = currentTab.innerHTML;
-        console.log(tabValue);
-    }
-    else{
-        console.log("null");
-    }
 }
