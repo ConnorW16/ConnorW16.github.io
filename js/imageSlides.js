@@ -8,7 +8,7 @@ function moveSlide(n){
 function currentSlide(n){
     showSlides(slideIndex = n);
 }
-function showSlides(n){
+function showSlides(n, tab){
     let i;
     slideIndex = n;
     currentTab = tab;
