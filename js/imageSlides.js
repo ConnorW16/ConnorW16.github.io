@@ -1,4 +1,5 @@
 let slideIndex;
+let currentTab;
 
 function moveSlide(n){
     showSlides(slideIndex += n);
@@ -10,6 +11,7 @@ function currentSlide(n){
 function showSlides(n){
     let i;
     slideIndex = n;
+    currentTab = tab;
     // let currentTab = document.querySelector('.tablinks');
     // let tabValue = currentTab.innerHTML;
     let slides = document.getElementsByClassName("slide");
@@ -19,14 +21,14 @@ function showSlides(n){
 
     // console.log(tabValue);
 
-    if (document.querySelector('.tablinks active') != null){
-        let currentTab = document.querySelector('.tablinks acvtive');
-        let tabValue = currentTab.innerHTML;
-        console.log(tabValue);
-    }
-    else{
-        console.log("null");
-    }
+    // if (document.querySelector('.tablinks active') != null){
+    //     let currentTab = document.querySelector('.tablinks acvtive');
+    //     let tabValue = currentTab.innerHTML;
+    //     console.log(tabValue);
+    // }
+    // else{
+    //     console.log("null");
+    // }
     
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
