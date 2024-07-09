@@ -18,11 +18,14 @@ function showSlides(n){
     let captionText2 = document.getElementById("caption2");
 
     // console.log(tabValue);
-    
+
     if (document.querySelector('.tablinks active') != null){
         let currentTab = document.querySelector('.tablinks acvtive');
         let tabValue = currentTab.innerHTML;
         console.log(tabValue);
+    }
+    else{
+        console.log("null");
     }
     
     if (n > slides.length) {slideIndex = 1}
