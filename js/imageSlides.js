@@ -18,6 +18,7 @@ function showSlides(n, tab){
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
     let captionText3 = document.getElementById("caption3");
+    let captionText4 = document.getElementById("caption4");
     
     if(n > 12 && currentTab == 'Project1'){
         slideIndex = 1;
@@ -49,4 +50,5 @@ function showSlides(n, tab){
     captionText.innerHTML = dots[slideIndex-1].alt;
     captionText2.innerHTML = dots[slideIndex-1].alt;
     captionText3.innerHTML = dots[slideIndex-1].alt;
+    captionText4.innerHTML = dots[slideIndex-1].alt;
 }
