@@ -12,27 +12,20 @@ function showSlides(n, tab){
     let i;
     slideIndex = n;
     currentTab = tab;
-    // let currentTab = document.querySelector('.tablinks');
-    // let tabValue = currentTab.innerHTML;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
 
     console.log(currentTab);
-    // console.log(tabValue);
-
-    // if (document.querySelector('.tablinks active') != null){
-    //     let currentTab = document.querySelector('.tablinks acvtive');
-    //     let tabValue = currentTab.innerHTML;
-    //     console.log(tabValue);
-    // }
-    // else{
-    //     console.log("null");
-    // }
     
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+    if(n > 12 && currentTab == 'Project1'){
+        slideIndex = 1;
+    }
+    if(n < 1 && currentTab == 'Project1'){
+        slideIndex = 12;
+    }
+
     for (i = 0; i < slides.length; i++){
         slides[i].style.display = "none";
     }
