@@ -20,10 +20,10 @@ function showSlides(n, tab){
     console.log(currentTab);
     
     if(n > 12 && currentTab == 'Project1'){
-        slideIndex = 1;
+        slideIndex = 2;
     }
     if(n < 1 && currentTab == 'Project1'){
-        slideIndex = 12;
+        slideIndex = 13;
     }
 
     for (i = 0; i < slides.length; i++){
