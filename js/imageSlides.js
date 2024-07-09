@@ -1,4 +1,5 @@
 let slideIndex;
+let currentTab;
 
 function moveSlide(n){
     showSlides(slideIndex += n);
@@ -10,7 +11,7 @@ function currentSlide(n){
 function showSlides(n, tab){
     let i;
     slideIndex = n;
-    const currentTab = tab;
+    currentTab = tab;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
