@@ -17,8 +17,6 @@ function showSlides(n, tab){
     let dots = document.getElementsByClassName("displayedImage");
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
-
-    console.log(currentTab);
     
     if(n > 12 && currentTab == 'Project1'){
         slideIndex = 1;
