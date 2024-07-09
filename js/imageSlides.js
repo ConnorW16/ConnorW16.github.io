@@ -26,10 +26,10 @@ function showSlides(n, tab){
     if(n < 1 && currentTab == 'Project1'){
         slideIndex = 12;
     }
-    if(n > 12 && currentTab == 'Project2'){
+    if(n > 24 && currentTab == 'Project2'){
         slideIndex = 13;
     }
-    if(n < 1 && currentTab == 'Project2'){
+    if(n < 13 && currentTab == 'Project2'){
         slideIndex = 24;
     }
 
