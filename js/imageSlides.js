@@ -19,6 +19,7 @@ function showSlides(n){
     let captionText = document.getElementById("caption");
     let captionText2 = document.getElementById("caption2");
 
+    console.log(currentTab);
     // console.log(tabValue);
 
     // if (document.querySelector('.tablinks active') != null){
