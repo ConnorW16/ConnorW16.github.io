@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slideIMG');
-    const labels = document.querySelectorAll('fullscreenLabel');
     const overlay = document.getElementById('overlay');
     const overlayImage = document.getElementById('overlay-image');
     const closeBtn = document.querySelector('.close');
@@ -9,13 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         slide.addEventListener('click', () => {
             // console.log("click")
             overlayImage.src = slide.src;
-            overlay.style.display = 'flex';
-        });
-    });
-    labels.forEach(label => {
-        label.addEventListener('click', () => {
-            // console.log("click")
-            overlayImage.src = slides.slide.src;
             overlay.style.display = 'flex';
         });
     });
