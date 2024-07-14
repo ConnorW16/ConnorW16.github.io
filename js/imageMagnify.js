@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     labels.forEach(label => {
         label.addEventListener('click', () => {
-            console.log("click")
-            overlayImage.src = slides.src;
+            // console.log("click")
+            overlayImage.src = slides.slide.src;
             overlay.style.display = 'flex';
         });
     });
