@@ -46,11 +46,11 @@ function showSlides(n, tab){
     if(n < 49 && currentTab == 'Project4'){
         slideIndex = 70;
     }
-    if(n > 100 && currentTab == 'Project6'){
+    if(n > 103 && currentTab == 'Project6'){
         slideIndex = 71;
     }
     if(n < 71 && currentTab == 'Project6'){
-        slideIndex = 100;
+        slideIndex = 103;
     }
 
     for (i = 0; i < slides.length; i++){
