@@ -7,6 +7,28 @@ body{
 
 
 
+@media only screen and (max-width: 950px){
+    .column{
+        width: 23.5%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .slides{
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+    }
+    .column{
+        width: 24%;
+    }
+    .next{
+        right: 0;
+    }
+}
+
+
+
 /* 1920, 1440, 2160 */
 #header{
     background-color: lightgray;
