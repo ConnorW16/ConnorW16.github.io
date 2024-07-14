@@ -64,6 +64,7 @@ li a:hover {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    border: 1px solid black;    
 }
 .tabs button:hover{
     background-color: #ddd;
