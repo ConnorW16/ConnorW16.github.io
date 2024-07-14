@@ -45,8 +45,6 @@ li a:hover {
     margin-top: 10px;
     font-size: 20px;
 }
-
-
 #contentSelection{
     margin-bottom: 25px;
 }
@@ -76,7 +74,6 @@ li a:hover {
     border: 1px solid #ccc;
     border-top: none;
 }
-
 .imageContainer{
     position: relative;
     overflow: hidden;
