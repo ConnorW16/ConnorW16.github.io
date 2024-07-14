@@ -7,38 +7,6 @@ body{
 
 
 
-@media only screen and (max-width: 950px){
-    .column{
-        width: 23.5%;
-    }
-}
-@media only screen and (max-width: 650px){
-    .slides{
-        width: 100%;
-    }
-    .row{
-        width: 100%;
-    }
-    .column{
-        width: 24%;
-    }
-    .next{
-        right: 0;
-    }
-}
-@media only screen and (max-width: 540px){
-    .column{
-        width: 23.5%;
-    }
-}
-@media only screen and (max-width: 375px){
-    .column{
-        width: 23%;
-    }
-}
-
-
-
 /* 1920, 1440, 2160 */
 #header{
     background-color: lightgray;
@@ -257,4 +225,36 @@ li a:hover {
     font-size: 32px;
     color: black;
     border: 2px solid black;
+}
+
+
+
+@media only screen and (max-width: 950px){
+    .column{
+        width: 23.5%;
+    }
+}
+@media only screen and (max-width: 650px){
+    .slides{
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+    }
+    .column{
+        width: 24%;
+    }
+    .next{
+        right: 0;
+    }
+}
+@media only screen and (max-width: 540px){
+    .column{
+        width: 23.5%;
+    }
+}
+@media only screen and (max-width: 375px){
+    .column{
+        width: 23%;
+    }
 }
