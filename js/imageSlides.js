@@ -21,6 +21,7 @@ function showSlides(n, tab){
     let captionText4 = document.getElementById("caption4");
 
     let captionText6 = document.getElementById("caption6");
+    let captionText7 = document.getElementById("caption7");
     
     if(n > 12 && currentTab == 'Project1'){
         slideIndex = 1;
@@ -46,11 +47,18 @@ function showSlides(n, tab){
     if(n < 49 && currentTab == 'Project4'){
         slideIndex = 70;
     }
+
     if(n > 103 && currentTab == 'Project6'){
         slideIndex = 71;
     }
     if(n < 71 && currentTab == 'Project6'){
         slideIndex = 103;
+    }
+    if(n > 108 && currentTab == 'Project7'){
+        slideIndex = 104;
+    }
+    if(n < 104 && currentTab == 'Project7'){
+        slideIndex = 108;
     }
 
     for (i = 0; i < slides.length; i++){
@@ -67,4 +75,5 @@ function showSlides(n, tab){
     captionText4.innerHTML = dots[slideIndex-1].alt;
 
     captionText6.innerHTML = dots[slideIndex-1].alt;
+    captionText7.innerHTML = dots[slideIndex-1].alt;
 }
