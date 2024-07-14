@@ -47,22 +47,22 @@ function showSlides(n, tab){
     if(n < 49 && currentTab == 'Project4'){
         slideIndex = 70;
     }
-    if(n > 103 && currentTab == 'Project6'){
+    if(n > 103 && currentTab == 'Project5'){
         slideIndex = 71;
     }
-    if(n < 71 && currentTab == 'Project6'){
+    if(n < 71 && currentTab == 'Project5'){
         slideIndex = 103;
     }
-    if(n > 108 && currentTab == 'Project7'){
+    if(n > 108 && currentTab == 'Project6'){
         slideIndex = 104;
     }
-    if(n < 104 && currentTab == 'Project7'){
+    if(n < 104 && currentTab == 'Project6'){
         slideIndex = 108;
     }
-    if(n > 121 && currentTab == 'Project5'){
+    if(n > 121 && currentTab == 'Project7'){
         slideIndex = 109;
     }
-    if(n < 109 && currentTab == 'Project5'){
+    if(n < 109 && currentTab == 'Project7'){
         slideIndex = 121;
     }
 
