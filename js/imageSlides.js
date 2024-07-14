@@ -20,7 +20,7 @@ function showSlides(n, tab){
     let captionText3 = document.getElementById("caption3");
     let captionText4 = document.getElementById("caption4");
 
-    let captionText6 = document.getElementById("caption4");
+    let captionText6 = document.getElementById("caption6");
     
     if(n > 12 && currentTab == 'Project1'){
         slideIndex = 1;
