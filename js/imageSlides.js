@@ -19,7 +19,7 @@ function showSlides(n, tab){
     let captionText2 = document.getElementById("caption2");
     let captionText3 = document.getElementById("caption3");
     let captionText4 = document.getElementById("caption4");
-
+    let captionText5 = document.getElementById("caption5");
     let captionText6 = document.getElementById("caption6");
     let captionText7 = document.getElementById("caption7");
     
@@ -47,7 +47,12 @@ function showSlides(n, tab){
     if(n < 49 && currentTab == 'Project4'){
         slideIndex = 70;
     }
-
+    if(n > 121 && currentTab == 'Project5'){
+        slideIndex = 109;
+    }
+    if(n < 109 && currentTab == 'Project5'){
+        slideIndex = 121;
+    }
     if(n > 103 && currentTab == 'Project6'){
         slideIndex = 71;
     }
@@ -73,7 +78,7 @@ function showSlides(n, tab){
     captionText2.innerHTML = dots[slideIndex-1].alt;
     captionText3.innerHTML = dots[slideIndex-1].alt;
     captionText4.innerHTML = dots[slideIndex-1].alt;
-
+    captionText5.innerHTML = dots[slideIndex-1].alt;
     captionText6.innerHTML = dots[slideIndex-1].alt;
     captionText7.innerHTML = dots[slideIndex-1].alt;
 }
