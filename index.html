@@ -27,7 +27,7 @@
             <button class="tablinks" onclick="openProject(event, 'Project2'); showSlides(13, 'Project2')">Dissertation Deliverable 2</button>
             <button class="tablinks" onclick="openProject(event, 'Project3'); showSlides(25, 'Project3')">Movie Website</button>
             <button class="tablinks" onclick="openProject(event, 'Project4'); showSlides(49, 'Project4')">Database Management Systems Unit</button>
-            <button class="tablinks" onclick="openProject(event, 'Project5')">Portfolio Website</button>
+            <button class="tablinks" onclick="openProject(event, 'Project5'); showSlides(109, 'Project5')">Portfolio Website</button>
             <button class="tablinks" onclick="openProject(event, 'Project6'); showSlides(71, 'Project6')">Game Scripts</button>
             <button class="tablinks" onclick="openProject(event, 'Project7'); showSlides(104, 'Project7')">Business Intelligence Tool</button>
         </div>
@@ -788,8 +788,148 @@
         </div>
         
         <div id="Project5" class="tabcontent">
-            <h3>Project 5</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae itaque voluptatem? Ea, nihil perferendis. Tempore accusantium reiciendis, nostrum unde necessitatibus consectetur exercitationem voluptate doloremque aspernatur quaerat? Est, vero iusto.</p>
+            <h3>Portfolio Website</h3>
+            <p>This project is a portfolio website which is used to display a variety of my main projects I have done over the years. This includes C# tools, SQL and NoSQL deliverables, websites, and video game scripts. The files for this projetc can be found <a href="https://github.com/ConnorW16/ConnorW16.github.io">HERE</a> and images of the code can be found in the images in the section below.</p>
+
+            <div class="captions">
+                <div class="imageCaption">
+                    <p id="caption5"></p>
+                </div>
+            </div>
+
+            <div class="imageContainer">
+                <div class="slides">
+                    <a class="prev" onclick="moveSlide(-1, 'Project5')">&#10094</a>
+                    <a class="next" onclick="moveSlide(1, 'Project5')">&#10095</a>
+
+                    <div class="slide">
+                        <div class="numberText">1 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexHTML1.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">2 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexHTML2.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">3 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexHTML3.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">4 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexHTML4.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">5 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexHTML5.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">6 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexCSS.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">7 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexJStabs.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">8 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexJSimagemag.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">9 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexJSimageslides1.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">10 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexJSimageslides2.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">11 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/IndexJSimageslides3.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">12 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/ContactHTML.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                    <div class="slide">
+                        <div class="numberText">13 / 13</div>
+                        <img class="slideIMG" src="img/Portfolio/ContactCSS.png" style="width: 100%">
+                        <div class="fullscreenLabel">&lt; Click Image to Fullscreen &gt;</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexHTML1.png" style="width: 100%" onclick="currentSlide(109)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(109)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexHTML2.png" style="width: 100%" onclick="currentSlide(110)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(110)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexHTML3.png" style="width: 100%" onclick="currentSlide(111)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(111)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexHTML4.png" style="width: 100%" onclick="currentSlide(112)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(112)"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexHTML5.png" style="width: 100%" onclick="currentSlide(113)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(113)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexCSS.png" style="width: 100%" onclick="currentSlide(114)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(114)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexJStabs.png" style="width: 100%" onclick="currentSlide(115)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(115)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexJSimagemag.png" style="width: 100%" onclick="currentSlide(116)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(116)"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexJSimageslides1.png" style="width: 100%" onclick="currentSlide(117)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(117)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexJSimageslides2.png" style="width: 100%" onclick="currentSlide(118)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(118)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/IndexJSimageslides3.png" style="width: 100%" onclick="currentSlide(119)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(119)"></div>
+                    </div>
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/ContactHTML.png" style="width: 100%" onclick="currentSlide(120)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(120)"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img class="displayedImage cursor" src="img/Portfolio/ContactCSS.png" style="width: 100%" onclick="currentSlide(121)" alt="">
+                        <div class="imageLabel" onclick="currentSlide(121)"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="Project6" class="tabcontent">
@@ -1198,7 +1338,7 @@
     </div>
     
     <div id="footer">
-        <p>Thank you for viewing my Portfolio, if you would like any further information or would like to get in touch with me, please visit the contact page via the button    below or at the top of the page.<br> - Connor Walton
+        <p>Thank you for viewing my Portfolio, if you would like any further information or would like to get in touch with me, please visit the contact page via the button below or at the top of the page.<br> - Connor Walton
         </p>
         <button type="button" onclick = "window.location.href='contact.html';">Contact</button>
     </div>
