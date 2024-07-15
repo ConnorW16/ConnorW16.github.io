@@ -268,4 +268,7 @@ li a:hover {
     #header{
         font-size: 32px;
     }
+    li a {
+        font-size: 26px;
+    } 
 }
