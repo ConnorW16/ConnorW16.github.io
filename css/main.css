@@ -264,3 +264,8 @@ li a:hover {
         width: 23%;
     }
 }
+@media only screen and (max-width: 320px){
+    #header{
+        font-size: 32px;
+    }
+}
